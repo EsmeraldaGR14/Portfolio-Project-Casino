@@ -1,0 +1,137 @@
+body {
+  background-image: url(https://as2.ftcdn.net/v2/jpg/01/01/27/17/1000_F_101271702_6yYufPCKMQwTl4MOVmi44UAkajrSGYcD.jpg);
+  /* background-image: url(https://img.freepik.com/premium-vector/poker-table-background-green-color_47243-1833.jpg); */
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  font-size: xx-large;
+  border: white;
+}
+
+.button,
+button {
+  color: black;
+  background-color: white;
+  border: 0;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
+  background-color: lightgreen;
+}
+
+#rules-popup,
+#tutorial-popup {
+  color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background: beige;
+  width: 500px;
+  max-width: 80%;
+}
+
+#rules-popup.active,
+#tutorial-popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#rules-header,
+#tutotial-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+#rules-header,
+#rules-title,
+#tutotial-header,
+#tutotial-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* #rules-header {
+ justify-content: space-between;
+} */
+
+#rules-header,
+#rules-close-button,
+#tutorial-header,
+#tutorial-close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#rules-popup-body,
+#tutotial-popup-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+ol li {
+  font-weight: bold;
+}
+
+li p {
+  font-weight: normal;
+}
