@@ -1,0 +1,58 @@
+/* body {
+ background-color: aqua;
+} */
+
+header {
+  text-align: center;
+}
+.container {
+  text-align: center;
+  display: grid;
+  /* background-color: aqua; */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.piles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.computer {
+  display: grid;
+  /* background-color: aqua; */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.player {
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+}
+
+button {
+  margin: 15px;
+  width: 75px;
+  margin-left: 80px;
+  background-color: rgb(252, 211, 160);
+}
+
+body {
+  background-color: #017b3f;
+}
+
+li {
+  list-style-type: none;
+}
+
+img:hover {
+  height: 120px;
+  border: 1px solid yellow;
+  box-shadow: 1px 1px 10px 1px yellow;
+}
