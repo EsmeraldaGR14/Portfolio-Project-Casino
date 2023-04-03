@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Project-Casino</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Casino</h1>
+      </header>
+      <form>
+        <!-- <button class="single-player" id="single-player"> -->
+        <a class="button" href="index2.html">Single Player</a>
+
+        <button class="tutorial" id="tutorial" onclick="activePopup">
+          Tutorial
+        </button>
+        <button class="rules" id="rules" onclick="activePopup">Rules</button>
+      </form>
+    </div>
+    <div id="overlay"></div>
+    <div id="rules-popup">
+      <div id="rules-header">
+        <div id="rules-title">Rules</div>
+        <button id="rules-close-button" onclick="closeButton">&times;</button>
+      </div>
+      <div id="rules-popup-body">
+        <ol>
+          <li>
+            <p>Higher number of cards: 3 points</p>
+          </li>
+          <li>
+            <p>Higher number of spades: 1 point</p>
+          </li>
+          <li>
+            <p>Diamond number 10: 2 point</p>
+          </li>
+          <li>
+            <p>Spades number 2: 1 point</p>
+          </li>
+          <li>
+            <p>
+              Each clearing of the board known as a <strong>"sweep"</strong>: 1
+              extra point
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div id="tutorial-popup">
+      <div id="tutorial-header">
+        <div id="tutorial-title">Rules</div>
+        <button id="tutorial-close-button" onclick="closeButton">
+          &times;
+        </button>
+      </div>
+      <div id="tutorial-popup-body">
+        <ol>
+          <li>
+            <p>Higher number of cards: 3 points</p>
+          </li>
+          <li>
+            <p>Higher number of spades: 1 point</p>
+          </li>
+          <li>
+            <p>Diamond number 10: 2 point</p>
+          </li>
+          <li>
+            <p>Spades number 2: 1 point</p>
+          </li>
+          <li>
+            <p>
+              Each clearing of the board known as a <strong>"sweep"</strong>: 1
+              extra point
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
