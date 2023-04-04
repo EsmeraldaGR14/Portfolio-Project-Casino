@@ -4,8 +4,7 @@ const tutorial = document.getElementById("tutorial");
 
 const rules = document.getElementById("rules");
 const rulesPopup = document.getElementById("rules-popup");
-console.log(rulesPopup);
-// rulesPopup.classList.toggle("remove");
+
 const rulesCloseButton = document.getElementById("rules-close-button");
 const tutorialCloseButton = document.getElementById("tutorial-close-button");
 

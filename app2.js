@@ -1,5 +1,7 @@
 const header = document.querySelector("header button");
 
+const h1 = document.querySelector("h1");
+
 const p = document.querySelector("p");
 
 const draw = document.querySelector(".draw");
@@ -155,6 +157,8 @@ draw.addEventListener("click", (event) => {
     });
 });
 
+let tableinfo;
+
 // gamePlay(playersCards);
 // gamePlay(computerCards);
 
@@ -165,28 +169,27 @@ draw.addEventListener("click", (event) => {
 // console.log(result);
 
 // gamePlay(tablesTurnSuit());
-// playersTurnSuit();
+playersTurnSuit();
 
-function playersTurnSuit(table) {
-  table = playersCards;
-  //   let tableinfo;
+function playersTurnSuit() {
+  let table = playersCards;
   let suit;
-  //   let value;
+  let value;
   for (let card of table) {
     card.addEventListener("click", () => {
       suit = card.querySelector("img").id;
-      //   value = card.querySelector("img").alt;
+      value = card.querySelector("img").alt;
 
-      //   tableinfo = {
-      //     ["suit"]: `${suit}`,
-      //     ["value"]: `${value}`,
-      //   };
+      tableinfo = {
+        ["suit"]: `${suit}`,
+        ["value"]: `${value}`,
+      };
 
       //   console.log(tableInfo);
-      //   console.log(tableinfo);
+      console.log(tableinfo);
       //   return tableinfo;
       //   console.log(suit);
-      return suit;
+      //   return suit;
     });
     // console.log(suit);
     // console.log(tableInfo); => undefined
@@ -325,10 +328,11 @@ function computersPile() {
 // hand = playersTurn(playersCards);
 
 function gamePlay(table, hand) {
-  table = tablesTurnSuit();
-  hand = playersTurnSuit();
+  //   table = tablesTurnSuit();
+  //   hand = playersTurnSuit();
 
-  console.log("hello");
+  console.log(tableinfo);
+  //   console.log("hello");
   //   let tableInfo = tablesTurn();
   //   let handInfo = playersTurn(hand);
   //   console.log(hand);
